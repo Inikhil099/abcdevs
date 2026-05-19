@@ -173,7 +173,7 @@ function Header({ setDarkModeState, isDarkmode }) {
             >
               Contact Us
             </NavLink>
-            <button className="bg-[#ff695f] p-2.5 rounded-xl cursor-pointer hover:opacity-80 text-white">
+            <button className="bg-[#ff695f] rounded-tr-2xl hover:-translate-y-2 transition-all duration-500 rounded-bl-2xl p-2.5 cursor-pointer hover:opacity-80 text-white">
               Contact Us Now
             </button>
           </nav>
