@@ -35,7 +35,10 @@ function Header({ setDarkModeState, isDarkmode }) {
           <ul className="flex justify-between items-center gap-x-4">
             <li>
               <NavLink
-                className={`${({ isActive }) => isActive && "text-[#c3581b]"} linkHover`}
+                className={({ isActive }) =>
+                  `${isActive ? "text-[#c3581b] border-b-2 border-[#c3581b]" : "linkHover"}
+   `
+                }
                 to={"/"}
               >
                 Home
@@ -43,7 +46,10 @@ function Header({ setDarkModeState, isDarkmode }) {
             </li>
             <li>
               <NavLink
-                className={`${({ isActive }) => isActive && "text-[#c3581b]"} linkHover`}
+                className={({ isActive }) =>
+                  `${isActive ? "text-[#c3581b] border-b-2 p-1 border-[#c3581b]" : "linkHover"}
+   `
+                }
                 to={"/services"}
               >
                 Services
@@ -51,7 +57,10 @@ function Header({ setDarkModeState, isDarkmode }) {
             </li>
             <li>
               <NavLink
-                className={`${({ isActive }) => isActive && "text-[#c3581b]"} linkHover`}
+                className={({ isActive }) =>
+                  `${isActive ? "text-[#c3581b] border-b-2 p-1 border-[#c3581b]" : "linkHover"}
+   `
+                }
                 to={"/about"}
               >
                 About
@@ -59,7 +68,10 @@ function Header({ setDarkModeState, isDarkmode }) {
             </li>
             <li>
               <NavLink
-                className={`${({ isActive }) => isActive && "text-[#c3581b]"} linkHover`}
+                className={({ isActive }) =>
+                  `${isActive ? "text-[#c3581b] border-b-2 p-1 border-[#c3581b]" : "linkHover"}
+   `
+                }
                 to={"/portfolio"}
               >
                 Portfolio
@@ -67,7 +79,10 @@ function Header({ setDarkModeState, isDarkmode }) {
             </li>
             <li>
               <NavLink
-                className={`${({ isActive }) => isActive && "text-[#c3581b]"} linkHover`}
+                className={({ isActive }) =>
+                  `${isActive ? "text-[#c3581b] border-b-2 p-1 border-[#c3581b]" : "linkHover"}
+   `
+                }
                 to={"/career"}
               >
                 Career
@@ -75,7 +90,10 @@ function Header({ setDarkModeState, isDarkmode }) {
             </li>
             <li>
               <NavLink
-                className={`${({ isActive }) => isActive && "text-[#c3581b]"} linkHover`}
+                className={({ isActive }) =>
+                  `${isActive ? "text-[#c3581b] border-b-2 p-1 border-[#c3581b]" : "linkHover"}
+   `
+                }
                 to={"/contact"}
               >
                 Contact Us
@@ -127,7 +145,10 @@ function Header({ setDarkModeState, isDarkmode }) {
 
           <nav className="space-y-4">
             <NavLink
-              className={`${({ isActive }) => isActive && "text-[#c3581b]"} linkHover`}
+              className={({ isActive }) =>
+                `${isActive ? "text-[#c3581b] border-b-2 p-1 border-[#c3581b]" : "linkHover"}
+   `
+              }
               to={"/"}
               className="block text-gray-600 hover:text-black"
             >
@@ -135,7 +156,10 @@ function Header({ setDarkModeState, isDarkmode }) {
             </NavLink>
 
             <NavLink
-              className={`${({ isActive }) => isActive && "text-[#c3581b]"} linkHover`}
+              className={({ isActive }) =>
+                `${isActive ? "text-[#c3581b] border-b-2 p-1 border-[#c3581b]" : "linkHover"}
+   `
+              }
               to={"/services"}
               className="block text-gray-600 hover:text-black"
             >
@@ -143,7 +167,10 @@ function Header({ setDarkModeState, isDarkmode }) {
             </NavLink>
 
             <NavLink
-              className={`${({ isActive }) => isActive && "text-[#c3581b]"} linkHover`}
+              className={({ isActive }) =>
+                `${isActive ? "text-[#c3581b] border-b-2 p-1 border-[#c3581b]" : "linkHover"}
+   `
+              }
               to={"/about"}
               className="block text-gray-600 hover:text-black"
             >
@@ -151,7 +178,10 @@ function Header({ setDarkModeState, isDarkmode }) {
             </NavLink>
 
             <NavLink
-              className={`${({ isActive }) => isActive && "text-[#c3581b]"} linkHover`}
+              className={({ isActive }) =>
+                `${isActive ? "text-[#c3581b] border-b-2 p-1 border-[#c3581b]" : "linkHover"}
+   `
+              }
               to={"/portfolio"}
               className="block text-gray-600 hover:text-black"
             >
@@ -159,7 +189,10 @@ function Header({ setDarkModeState, isDarkmode }) {
             </NavLink>
 
             <NavLink
-              className={`${({ isActive }) => isActive && "text-[#c3581b]"} linkHover`}
+              className={({ isActive }) =>
+                `${isActive ? "text-[#c3581b] border-b-2 p-1 border-[#c3581b]" : "linkHover"}
+   `
+              }
               to={"/carrer"}
               className="block text-gray-600 hover:text-black"
             >
@@ -167,7 +200,10 @@ function Header({ setDarkModeState, isDarkmode }) {
             </NavLink>
 
             <NavLink
-              className={`${({ isActive }) => isActive && "text-[#c3581b]"} linkHover`}
+              className={({ isActive }) =>
+                `${isActive ? "text-[#c3581b] border-b-2 p-1 border-[#c3581b]" : "linkHover"}
+   `
+              }
               to={"/contact"}
               className="block text-gray-600 hover:text-black"
             >
