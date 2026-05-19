@@ -22,6 +22,11 @@ const cards = [
     title: "Trusted Business Partner",
     desc: "We work as your growth partner, helping all types of businesses succeed in competitive markets.",
   },
+  {
+    icon: "🤝",
+    title: "Trusted Business Partner",
+    desc: "We work as your growth partner, helping all types of businesses succeed in competitive markets.",
+  },
 ];
 
 const images = [socials, socials2, lapmic, shreeshaghee2];
@@ -158,7 +163,7 @@ function BusinessSolutionsSection() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.05 }}
-            className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-6"
+            className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-6"
           >
             {cards.map((item, index) => (
               <motion.div

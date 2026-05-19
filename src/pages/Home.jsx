@@ -4,7 +4,7 @@ import {
   CarouselContent,
   CarouselItem,
 } from "react-responsive-carousel";
-import abcimage from "../assets/abcimage.webp";
+import abcimage from "../assets/abcimage.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import CarouselCard from "../components/CarouselCard";
@@ -15,10 +15,12 @@ import itservices from "../assets/ITServices.webp";
 import "swiper/css";
 import ServicesCards from "../components/ServicesCards";
 import Testimonials from "../components/Testimonials";
-import TrustedPartners from "../components/TrustedPartners"
+import TrustedPartners from "../components/TrustedPartners";
 import PortfolioCard from "../components/PortfolioCards";
 import AboutSection from "../components/AboutSection";
 import BusinessSolutionsSection from "../components/BusinessGrowth";
+import { Link } from "react-router-dom";
+import ProfessionalServices from "../components/ProfessionalServices";
 
 const CardText = [
   {
@@ -76,17 +78,17 @@ const companyProfileCards = [
   {
     title: "Shreeshaa Ghee",
     image: shreesha,
-    link: "#",
+    link: "https://abcdevelopers.in/ghee_products.html",
   },
   {
     title: "IT Services",
     image: itservices,
-    link: "#",
+    link: "https://abcdevelopers.in/abctechsolutions",
   },
   {
     title: "Legal Consultancy",
     image: Legal,
-    link: "../assets/Legal.webp",
+    link: "https://abcdevelopers.in/legal_website/legal_index.html",
   },
 ];
 
@@ -192,12 +194,12 @@ function Home() {
                 {card.title}
               </h3>
 
-              <a
-                href={card.link}
+              <Link
+                to={"https://abcdevelopers.in/abctechsolutions"}
                 className="inline-flex mt-4 Shadows px-4 py-2 rounded-xl transition-all duration-300 bg-[#e89a00] buttonAnimation text-white font-medium hover:opacity-90 "
               >
                 Visit Website
-              </a>
+              </Link>
             </div>
           </motion.div>
         ))}
@@ -206,10 +208,11 @@ function Home() {
       {/* feature cards  */}
 
       <ServicesCards />
-      <BusinessSolutionsSection/>
-      <AboutSection/>
-      <PortfolioCard/>
-      <TrustedPartners/>
+      <ProfessionalServices />
+      <BusinessSolutionsSection />
+      <AboutSection />
+      <PortfolioCard />
+      <TrustedPartners />
       <Testimonials />
     </div>
   );

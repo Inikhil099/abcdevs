@@ -11,41 +11,49 @@ import propertyconsulting from "../assets/propertyconsulting.webp";
 import transformative from "../assets/transformative.webp";
 import hoverbg from "../assets/hover-bg.webp";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const portfolioCardsContent = [
   {
     title: "Health & Fitness",
     des: "Wellness and Lifestyle Care",
     image: healthandfitness,
+    link: "https://abcdevelopers.in/health-fitness.html",
   },
   {
     title: "Shreesha Ghee",
     des: "Pure A2 Desi Cow Ghee",
     image: shreeshaghee2,
+    link: "https://abcdevelopers.in/ghee_products.html",
   },
   {
     title: "IT & Digital Solutions",
     des: "Web, Software & Technology",
     image: itdigital,
+    link: "https://abcdevelopers.in/it-services.html",
   },
   {
     title: "Legal Consultation",
     des: "Advisory & Documentation",
     image: legalconsultation,
+    link: "https://abcdevelopers.in/legal-services.html",
   },
   {
     title: "Property Consulting",
     des: "Buy, Sell & Invest",
     image: propertyconsulting,
+    link: "https://abcdevelopers.in/property-services.html",
   },
   {
     title: "Spiritual Guidance",
     des: "Peace, Positivity & Wellness",
     image: transformative,
+    link: "https://abcdevelopers.in/spiritual-services.html",
   },
 ];
 function PortfolioCard() {
   const [currentCard, setcurrentCard] = useState("");
+  const navigate = useNavigate();
   const headingVariant = {
     hidden: {
       y: -80,
@@ -116,7 +124,7 @@ function PortfolioCard() {
             }}
             loop={true}
           >
-            {portfolioCardsContent.map(({ title, des, image }) => (
+            {portfolioCardsContent.map(({ title, des, image, link }) => (
               <SwiperSlide>
                 <div
                   key={title}
@@ -163,9 +171,10 @@ function PortfolioCard() {
           </Swiper>
         ) : (
           <div className="w-full flex flex-wrap justify-center items-center items-center gap-y-10">
-            {portfolioCardsContent.map(({ title, des, image }) => (
+            {portfolioCardsContent.map(({ title, des, image, link }) => (
               <div
                 key={title}
+                onClick={()=>{navigate(link)}}
                 onMouseOver={() => {
                   setcurrentCard(title);
                 }}

@@ -5,7 +5,7 @@ import { MdDarkMode, MdLightMode } from "react-icons/md";
 import { IoMenu } from "react-icons/io5";
 import { IoMdClose } from "react-icons/io";
 
-function Header({ setDarkModeState, isDarkmode }) {
+function Header({ setDarkModeState, isDarkmode, formRef }) {
   const [scrolled, setScrolled] = useState(false);
   const [isSideBar, setisSideBar] = useState(false);
 
@@ -91,7 +91,7 @@ function Header({ setDarkModeState, isDarkmode }) {
             <li>
               <NavLink
                 className={({ isActive }) =>
-                  `${isActive ? "text-[#c3581b] border-b-2 p-1 border-[#c3581b]" : "linkHover"}
+                  `${isActive ? "text-[#c3581b] hidden md:block border-b-2 p-1 border-[#c3581b]" : "linkHover"}
    `
                 }
                 to={"/contact"}
@@ -102,7 +102,12 @@ function Header({ setDarkModeState, isDarkmode }) {
           </ul>
         </div>
         <div className="flex justify-center gap-x-2.5 items-center">
-          <button className="bg-[#ff695f] p-2.5 text-sm md:text-[15px]  rounded-full  rounded-br-xl cursor-pointer hover:opacity-80 text-white">
+          <button
+            onClick={() =>
+              formRef.current.scrollIntoView({ behavior: "smooth" })
+            }
+            className="bg-[#ff695f] p-2.5 text-sm md:text-[15px]  rounded-full  rounded-br-xl cursor-pointer hover:opacity-80 text-white"
+          >
             Contact Us Now
           </button>
           {/* <button
@@ -209,7 +214,12 @@ function Header({ setDarkModeState, isDarkmode }) {
             >
               Contact Us
             </NavLink>
-            <button className="bg-[#ff695f] rounded-tr-2xl hover:-translate-y-2 transition-all duration-500 rounded-bl-2xl p-2.5 cursor-pointer hover:opacity-80 text-white">
+            <button
+              onClick={() =>
+                formRef.current.scrollIntoView({ behavior: "smooth" })
+              }
+              className="bg-[#ff695f] rounded-tr-2xl hover:-translate-y-2 transition-all duration-500 rounded-bl-2xl p-2.5 cursor-pointer hover:opacity-80 text-white"
+            >
               Contact Us Now
             </button>
           </nav>

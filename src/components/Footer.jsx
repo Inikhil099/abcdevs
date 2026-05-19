@@ -1,6 +1,7 @@
 import React from "react";
 import ABCLogo from "../assets/ABCLogo.webp";
 import {
+  FaFacebook,
   FaInstagram,
   FaLinkedinIn,
   FaTwitter,
@@ -8,6 +9,8 @@ import {
 } from "react-icons/fa";
 import footerbg from "../assets/footerbg.webp";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import { FaXTwitter, FaYoutube } from "react-icons/fa6";
 
 const leftToRight = {
   hidden: {
@@ -63,7 +66,7 @@ const bottomToTop = {
   },
 };
 
-function Footer() {
+function Footer({ formRef }) {
   return (
     <footer
       style={{
@@ -101,6 +104,7 @@ function Footer() {
           whileInView="visible"
           viewport={{ once: true }}
           className="w-full rounded-[30px] px-8 py-12 md:px-14 md:py-16 shadow-lg"
+          ref={formRef}
         >
           {/* Top Curve */}
           <div className="relative mb-12">
@@ -196,21 +200,54 @@ function Footer() {
           <p className="text-xl text-gray-400">info@abcdevelopers.com</p>
 
           <div className="flex items-center gap-4">
-            <div className="flex h-12 w-12 cursor-pointer items-center justify-center rounded-full bg-sky-500 text-white">
+            <Link
+              to={"https://wa.me/919999998436"}
+              rel="noopener noreferrer"
+              target="_blank"
+              className="flex h-12 w-12  cursor-pointer items-center justify-center rounded-full bg-sky-500 text-white"
+            >
               <FaWhatsapp />
-            </div>
+            </Link>
 
-            <div className="flex h-12 w-12 cursor-pointer items-center justify-center rounded-full bg-sky-500 text-white">
-              <FaTwitter />
-            </div>
+            <Link
+              to={""}
+              target="_blank"
+              className="flex h-12 w-12 cursor-pointer items-center justify-center rounded-full bg-sky-500 text-white"
+            >
+              <FaXTwitter />
+            </Link>
 
-            <div className="flex h-12 w-12 cursor-pointer items-center justify-center rounded-full bg-sky-500 text-white">
+            <Link
+              to={"https://www.instagram.com/_abctechsolution"}
+              target="_blank"
+              className="flex h-12 w-12 cursor-pointer items-center justify-center rounded-full bg-sky-500 text-white"
+            >
               <FaInstagram />
-            </div>
+            </Link>
 
-            <div className="flex h-12 w-12 cursor-pointer items-center justify-center rounded-full bg-sky-500 text-white">
+            <Link
+              target="_blank"
+              to={"https://www.linkedin.com/company/abc-developers003"}
+              className="flex h-12 w-12 cursor-pointer items-center justify-center rounded-full bg-sky-500 text-white"
+            >
               <FaLinkedinIn />
-            </div>
+            </Link>
+            <Link
+              target="_blank"
+              to={
+                "https://www.facebook.com/people/ABC-Tech-Solution/61584434008281/"
+              }
+              className="flex h-12 w-12 cursor-pointer items-center justify-center rounded-full bg-sky-500 text-white"
+            >
+              <FaFacebook />
+            </Link>
+            <Link
+              target="_blank"
+              to={"https://www.youtube.com/@abctechsolution"}
+              className="flex h-12 w-12 cursor-pointer items-center justify-center rounded-full bg-sky-500 text-white"
+            >
+              <FaYoutube />
+            </Link>
           </div>
         </motion.div>
 
