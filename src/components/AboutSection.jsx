@@ -63,7 +63,7 @@ function AboutSection() {
 
   return (
     <div className="w-full mb-10  px-6">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         {/* LEFT IMAGE */}
         <motion.div
           variants={imageVariant}
