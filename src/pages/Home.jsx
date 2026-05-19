@@ -16,6 +16,7 @@ import "swiper/css";
 import ServicesCards from "../components/ServicesCards";
 import Testimonials from "../components/Testimonials";
 import TrustedPartners from "../components/TrustedPartners"
+import PortfolioCard from "../components/PortfolioCards";
 
 const CardText = [
   {
@@ -203,6 +204,7 @@ function Home() {
       {/* feature cards  */}
 
       <ServicesCards />
+      <PortfolioCard/>
       <TrustedPartners/>
       <Testimonials />
     </div>

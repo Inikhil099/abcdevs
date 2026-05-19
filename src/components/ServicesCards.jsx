@@ -156,9 +156,9 @@ function ServicesCards() {
         initial="hidden"
         whileInView="visible"
         viewport={{
-  once: true,
-  amount: 0.05,
-}}
+          once: true,
+          amount: 0.05,
+        }}
         className="mt-16 sm:grid sm:grid-cols-1 justify-center items-center gap-10 md:grid-cols-2 lg:grid-cols-3 "
       >
         {features.map((item, index) => (

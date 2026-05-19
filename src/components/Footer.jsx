@@ -84,8 +84,7 @@ function Footer() {
           className="w-full h-[550px] rounded-[30px] overflow-hidden shadow-lg"
         >
           <iframe
-            title="location-map"
-            src="https://www.google.com/maps?q=ATS%20Bouquet%20Noida&output=embed"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.9821263662116!2d77.37806287578043!3d28.510185475731724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce937dd33a677%3A0xf2482b431fe4c606!2sATS%20Bouquet!5e0!3m2!1sen!2sin!4v1779177957833!5m2!1sen!2sin"
             width="100%"
             height="100%"
             loading="lazy"
