@@ -15,6 +15,7 @@ import itservices from "../assets/ITServices.webp";
 import "swiper/css";
 import ServicesCards from "../components/ServicesCards";
 import Testimonials from "../components/Testimonials";
+import TrustedPartners from "../components/TrustedPartners"
 
 const CardText = [
   {
@@ -114,8 +115,8 @@ function Home() {
   // #c3581b
   return (
     <div className="w-full ">
-      <div className="justify-between min-h-[80vh] items-center  relative">
-        <div className="absolute top-10 left-5 w-full">
+      <div className="justify-between min-h-[80vh] items-center relative">
+        <div className="absolute top-10 sm:left-5 w-full">
           <Swiper
             pagination={true}
             className="mySwiper h-full w-full"
@@ -202,6 +203,7 @@ function Home() {
       {/* feature cards  */}
 
       <ServicesCards />
+      <TrustedPartners/>
       <Testimonials />
     </div>
   );

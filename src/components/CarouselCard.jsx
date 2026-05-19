@@ -18,7 +18,7 @@ function CarouselCard({ title, desc, buttonTitle }) {
         </div>
 
         {/* Button */}
-        <button className="mt-5 px-4 py-3 cursor-pointer rounded-full bg-[#1796e6] text-white text-xl font-medium hover:opacity-90 transition">
+        <button className="mt-5 px-4 carouselbuttonanimation py-3 cursor-pointer rounded-full bg-[#1796e6] text-white text-xl font-medium hover:opacity-90 transition">
           {buttonTitle}
         </button>
       </div>
