@@ -17,6 +17,8 @@ import ServicesCards from "../components/ServicesCards";
 import Testimonials from "../components/Testimonials";
 import TrustedPartners from "../components/TrustedPartners"
 import PortfolioCard from "../components/PortfolioCards";
+import AboutSection from "../components/AboutSection";
+import BusinessSolutionsSection from "../components/BusinessGrowth";
 
 const CardText = [
   {
@@ -204,6 +206,8 @@ function Home() {
       {/* feature cards  */}
 
       <ServicesCards />
+      <BusinessSolutionsSection/>
+      <AboutSection/>
       <PortfolioCard/>
       <TrustedPartners/>
       <Testimonials />
