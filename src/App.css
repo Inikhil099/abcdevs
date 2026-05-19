@@ -1,0 +1,47 @@
+@keyframes buttonAnimation {
+  0%{
+    transform: translateY(0px)
+  }
+  50%{
+    transform: translateY(-7px)
+  }
+  100%{
+    transform: translateY(0px)
+  }
+}
+
+
+.buttonAnimation{
+  animation-name: buttonAnimation;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.Shadows{
+  box-shadow: 0 0 50px 0px lightgray;
+}
+
+.linkHover {
+  position: relative;
+  display: inline-block;
+}
+
+.linkHover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+
+  width: 0%;
+  height: 2px;
+
+  background: currentColor;
+
+  transition: width 0.3s ease;
+}
+
+.linkHover:hover::after {
+  width: 100%;
+}
+
