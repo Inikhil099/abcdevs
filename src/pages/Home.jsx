@@ -144,14 +144,12 @@ function Home() {
           </Swiper>
         </div>
 
-        <div
-          style={{
-            backgroundImage: `url(${abcimage})`,
-          }}
-          className="w-full min-h-screen absolute bg-no-repeat right-0"
+        <img
+          src={abcimage}
+          className="w-full min-h-[85vh] absolute inset-0 bg-no-repeat right-0"
         />
       </div>
-      <div className="w-full py-10 px-6">
+      <div className="w-full my-20 px-6">
         {/* Heading */}
         <div className="text-center">
           <h2 className="text-5xl font-bold text-[#14213d]">
@@ -171,7 +169,7 @@ function Home() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="max-w-7xl mx-auto grid p-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10"
+        className="max-w-7xl mx-auto grid px-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10"
       >
         {companyProfileCards.map((card, index) => (
           <motion.div

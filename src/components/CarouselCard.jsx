@@ -13,7 +13,7 @@ function CarouselCard({ title, desc, buttonTitle }) {
         </h1>
 
         {/* Description */}
-        <div className="mt-8 space-y-4 text-lg md:text-xl leading-relaxed">
+        <div className="mt-8 space-y-4 text-lg font-semibold md:text-xl leading-relaxed">
           <p>{desc}</p>
         </div>
 
