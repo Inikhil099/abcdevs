@@ -151,66 +151,60 @@ function Header({ setDarkModeState, isDarkmode, formRef }) {
           <nav className="space-y-4">
             <NavLink
               className={({ isActive }) =>
-                `${isActive ? "text-[#c3581b] border-b-2 p-1 border-[#c3581b]" : "linkHover"}
+                `block text-gray-600 hover:text-black ${isActive ? "text-[#c3581b] border-b-2 p-1 border-[#c3581b]" : "linkHover"}
    `
               }
               to={"/"}
-              className="block text-gray-600 hover:text-black"
             >
               Home
             </NavLink>
 
             <NavLink
               className={({ isActive }) =>
-                `${isActive ? "text-[#c3581b] border-b-2 p-1 border-[#c3581b]" : "linkHover"}
+                `block text-gray-600 hover:text-black ${isActive ? "text-[#c3581b] border-b-2 p-1 border-[#c3581b]" : "linkHover"}
    `
               }
               to={"/services"}
-              className="block text-gray-600 hover:text-black"
             >
               Services
             </NavLink>
 
             <NavLink
               className={({ isActive }) =>
-                `${isActive ? "text-[#c3581b] border-b-2 p-1 border-[#c3581b]" : "linkHover"}
+                `block text-gray-600 hover:text-black ${isActive ? "text-[#c3581b] border-b-2 p-1 border-[#c3581b]" : "linkHover"}
    `
               }
               to={"/about"}
-              className="block text-gray-600 hover:text-black"
             >
               About
             </NavLink>
 
             <NavLink
               className={({ isActive }) =>
-                `${isActive ? "text-[#c3581b] border-b-2 p-1 border-[#c3581b]" : "linkHover"}
+                `block text-gray-600 hover:text-black ${isActive ? "text-[#c3581b] border-b-2 p-1 border-[#c3581b]" : "linkHover"}
    `
               }
               to={"/portfolio"}
-              className="block text-gray-600 hover:text-black"
             >
               Portfolio
             </NavLink>
 
             <NavLink
               className={({ isActive }) =>
-                `${isActive ? "text-[#c3581b] border-b-2 p-1 border-[#c3581b]" : "linkHover"}
+                `block text-gray-600 hover:text-black ${isActive ? "text-[#c3581b] border-b-2 p-1 border-[#c3581b]" : "linkHover"}
    `
               }
               to={"/carrer"}
-              className="block text-gray-600 hover:text-black"
             >
               Career
             </NavLink>
 
             <NavLink
               className={({ isActive }) =>
-                `${isActive ? "text-[#c3581b] border-b-2 p-1 border-[#c3581b]" : "linkHover"}
+                `block text-gray-600 hover:text-black ${isActive ? "text-[#c3581b] border-b-2 p-1 border-[#c3581b]" : "linkHover"}
    `
               }
               to={"/contact"}
-              className="block text-gray-600 hover:text-black"
             >
               Contact Us
             </NavLink>
