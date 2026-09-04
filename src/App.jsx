@@ -15,7 +15,7 @@ function App() {
   const formRef = useRef(null);
   const setDarkModeState = useCallback(() => {
     setisDarkmode(!isDarkmode);
-  });
+  }, []);
   return (
     <>
       <div className={`${isDarkmode ? "bg-gray-900" : "bg-white"}`}>

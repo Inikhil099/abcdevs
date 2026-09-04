@@ -1,8 +1,16 @@
 import React from "react";
 import { motion } from "framer-motion";
+import laptoplogo from "../assets/LogoImages/laptoplogo.webp";
+import lawlogo from "../assets/LogoImages/lawlogo.webp";
+import propertylogo from "../assets/LogoImages/propertylogo.webp";
+import spirituallogo from "../assets/LogoImages/spirituallogo.webp";
+import retaillogo from "../assets/LogoImages/retaillogo.webp";
+import fashionlogo from "../assets/LogoImages/fashionlogo.webp";
+import healthandwellnesslogo from "../assets/LogoImages/healthandwellnesslogo.webp";
+import travellogo from "../assets/LogoImages/travellogo.webp";
 const features = [
   {
-    icon: "💻",
+    icon: laptoplogo,
     title: "IT & Digital Solutions",
     desc: [
       "Website & software development",
@@ -13,7 +21,7 @@ const features = [
   },
 
   {
-    icon: "⚖️",
+    icon: lawlogo,
     title: "Legal Consultation",
     desc: [
       "Professional legal advice",
@@ -24,7 +32,7 @@ const features = [
   },
 
   {
-    icon: "🏢",
+    icon: propertylogo,
     title: "Property Consulting",
     desc: [
       "Residential property guidance",
@@ -35,7 +43,7 @@ const features = [
   },
 
   {
-    icon: "🧘",
+    icon: spirituallogo,
     title: "Spiritual Guidance",
     desc: [
       "Meditation & healing support",
@@ -46,19 +54,17 @@ const features = [
   },
 
   {
-    icon: "🛍️",
-    title: "Retail & Marketplace",
+    icon: retaillogo,
+    title: "Pure Ghee for Health & Positivity",
     desc: [
-      "Premium quality products",
-      "Trusted online marketplace",
-      "Affordable pricing solutions",
-      "Customer-focused services",
+      "100% pure ghee",
+      "Enhancing health & energy and positive living"
     ],
   },
 
   {
-    icon: "👗",
-    title: "Fashion & Lifestyle",
+    icon: fashionlogo,
+    title: "Apparels",
     desc: [
       "Trendy apparel collections",
       "Premium fabric quality",
@@ -68,7 +74,7 @@ const features = [
   },
 
   {
-    icon: "🏥",
+    icon: healthandwellnesslogo,
     title: "Health & Wellness",
     desc: [
       "Fitness & health guidance",
@@ -79,7 +85,17 @@ const features = [
   },
 
   {
-    icon: "✈️",
+    icon: travellogo,
+    title: "Hotels",
+    desc: [
+      "Luxury hotel bookings",
+      "Travel planning assistance",
+      "Holiday & honeymoon packages",
+      "Premium hospitality support",
+    ],
+  },
+  {
+    icon: travellogo,
     title: "Travel & Hospitality",
     desc: [
       "Luxury hotel bookings",
@@ -170,8 +186,8 @@ function ServicesCards() {
             {/* Content */}
             <div className="p-2 flex flex-col justify-center items-center">
               {/* Icon */}
-              <div className="flex h-20 w-20 items-center justify-center rounded-full bg-[#f8fafc] shadow-md text-2xl">
-                {item.icon}
+              <div className="flex h-20 w-20 items-center justify-center rounded-full  text-2xl">
+                <img src={item.icon} alt="" />
               </div>
 
               {/* Title */}

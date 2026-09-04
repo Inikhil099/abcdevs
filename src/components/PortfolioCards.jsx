@@ -76,11 +76,9 @@ function PortfolioCard() {
       y: 80,
       opacity: 0,
     },
-
     visible: {
       y: 0,
       opacity: 1,
-
       transition: {
         duration: 0.7,
         delay: 0.2,
@@ -134,7 +132,7 @@ function PortfolioCard() {
                   onMouseLeave={() => {
                     setcurrentCard("");
                   }}
-                  className="relative overflow-hidden rounded-[28px] mx-5 max-h-[350px] max-w-[420px] shadow-2xl"
+                  className="relative overflow-hidden rounded-[28px] mx-5 max-h-87.5 max-w-105 shadow-2xl"
                 >
                   <img
                     src={image}
